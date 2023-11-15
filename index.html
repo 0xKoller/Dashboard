@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Live Coding</title>
+</head>
+<body class='md:p-2'>  
+      <main class='flex flex-col md:flex-row justify-between p-2'>
+        <section class='flex flex-col md:w-3/4 w-full p-1 rounded mx-2'>
+            <h1 class='text-center font-bold'>Dashboard</h1>
+            <span class='text-center font-thin font-italic text-[.7rem]' id='quote'>Quote of the day</span>
+            <span class='text-center font-thin font-italic text-[.5rem] text-stone-300' id='author'>Quote of the day</span>
+            <article class='w-full bg-slate-100 rounded my-2'>
+                <h2 class='text-center font-bold'>Clima</h2>
+                <div class='flex flex-col md:flex-row'>
+                <div class='flex flex-col  justify-between text-[.6rem] w-1/2 bg-amber-100 rounded m-1 text-stone-400' id='clima'>
+                    <div class='flex flex-row justify-evenly place-items-center'>
+                        
+                    <p class='md:w-1/2 text-center flex flex-col p-1 text-[1rem] text-black'>Temperatura <span  id='temp'></span></p>
+                    <p class='md:w-1/2  flex flex-row justify-end p-1'>ST <span class='px-1' id='st'></span></p>
+                    </div>    
+                    <div class='flex flex-row '>
+                        
+                    <p class='md:w-1/2 flex flex-row p-1'>Maxima: <span class='px-1' id='temp-min'></span></p>
+                    <p class='md:w-1/2 flex flex-row p-1'>Minima: <span class='px-1' id='temp-max'></span></p>
+                    </div>
+                </div>
+                <div class='flex flex-col  justify-between text-[.6rem] w-1/2 bg-amber-100 rounded m-1 text-stone-400' id='clima'>
+                    <div class='flex flex-col justify-evenly place-items-center'>
+                        
+                    <p class='md:w-1/2 text-center flex flex-col text-[1rem] text-black'><span  id='main'></span></p>
+                    <p class='md:w-1/2 text-center'><span id='desc'></span></p>
+                    </div>    
+                    <div class='flex flex-row '>
+                        
+                    <p class='md:w-1/2 flex flex-row p-1'>Humedad: <span class='px-1' id='humidity'></span></p>
+                    <p class='md:w-1/2 flex flex-row p-1'>Presion: <span class='px-1' id='pressure'></span></p>
+                    </div>
+                </div>
+                </div>
+            </article>
+        </section>
+        <section class='flex flex-col justify-center md:w-1/4 w-full  '>
+            <section class=' rounded bg-slate-100 md:my-2  p-1'>
+            <h2 class='text-center font-bold '>Dolar</h2>
+            
+        <div class='flex flex-col md:flex-row justify-between' id='dolar'>
+            <p class='md:w-1/2 text-center flex flex-col'>Compra <span class='text-blue-500  font-bold' id='compra'></span></p>
+            <p  class='md:w-1/2  text-center flex flex-col'>Venta <span class='text-green-500 font-bold' id='venta'></span></p>
+        </div>
+        <p class='text-right font-thin font-italic text-[8px] antialiased'>Hora de cotizacion: <span id='hour'></span></p>
+        </section>
+        <section  class=' rounded bg-slate-100  md:my-2  p-1'>
+            <h2 class='text-center font-bold '>Criptos</h2>
+            <div class='flex flex-col justify-between text-white'>
+            <p class=' w-full text-xs  flex flex-row bg-orange-400 rounded my-1  p-1 '>BTC: <span class=' px-1' id='btc'></span></p>
+            <p class=' w-full text-xs  flex flex-row bg-stone-400   rounded my-1 p-1'>ETH: <span class=' px-1' id='eth'></span></p>
+            <p class=' w-full text-xs  flex flex-row bg-violet-700   rounded my-1 p-1'>MATIC: <span class=' px-1' id='matic'></span></p>
+            <p class=' w-full text-xs  flex flex-row bg-yellow-400   rounded my-1 p-1'>DAI: <span class=' px-1' id='dai'></span></p>
+            <p class=' w-full text-xs  flex flex-row bg-cyan-600   rounded my-1 p-1'>USDC: <span class=' px-1' id='usdc'></span></p>
+            <p class=' w-full text-xs  flex flex-row bg-green-600   rounded my-1 p-1'>USDT: <span class=' px-1' id='usdt'></span></p>
+            
+        </div>
+        </section>
+        </section>
+    </main>
+    <footer></footer>
+    
+
+    <script defer src="main.js">
+
+
+    </script>
+</body>
+</html>

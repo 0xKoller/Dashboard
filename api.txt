@@ -1,0 +1,47 @@
+Api Dolar: https://www.dolarsi.com/api/api.php?type=valoresprincipales
+citas: https://docs.zenquotes.io/zenquotes-documentation/
+clima: https://www.weatherapi.com/my/
+
+{
+    "coord": {
+        "lon": -58.3772,
+        "lat": -34.6132
+    },
+    "weather": [
+        {
+            "id": 800,
+            "main": "Clear",
+            "description": "cielo claro",
+            "icon": "01d"
+        }
+    ],
+    "base": "stations",
+    "main": {
+        "temp": 19.01,
+        "feels_like": 18.14,
+        "temp_min": 18.21,
+        "temp_max": 20.56,
+        "pressure": 1014,
+        "humidity": 45
+    },
+    "visibility": 10000,
+    "wind": {
+        "speed": 8.23,
+        "deg": 120
+    },
+    "clouds": {
+        "all": 0
+    },
+    "dt": 1699892904,
+    "sys": {
+        "type": 1,
+        "id": 8224,
+        "country": "AR",
+        "sunrise": 1699864914,
+        "sunset": 1699914827
+    },
+    "timezone": -10800,
+    "id": 3435910,
+    "name": "Buenos Aires",
+    "cod": 200
+}
